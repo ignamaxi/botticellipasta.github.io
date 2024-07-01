@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-section">
+        <h2>Salsas</h2>
+        <a href="index.html" class="back-button">Volver</a>
+        </header><div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Bife de Chorizo</p>
+                <p class="item-price">$17100</p>
+                <p class="item-description"></p>
+            </div>
+            <button onclick="addToBasket('Bife de Chorizo', 17100)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Bife de Lomo con crema de champiñones y papas fritas</p>
+                <p class="item-price">$19500</p>
+                <p class="item-description"></p>
+            </div>
+            <button onclick="addToBasket('Bife de Lomo con crema de champiñones y papas fritas', 19500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Ojo de bife alla sarda</p>
+                <p class="item-price">$17100</p>
+                <p class="item-description">Ojo de bife, salsa de tomate, aceitunas, ajos cortados, anchoas con papas fritas.</p>
+            </div>
+            <button onclick="addToBasket('Ojo de bife alla sarda', 17100)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Saltimbocca alla romana</p>
+                <p class="item-price">$17100</p>
+                <p class="item-description">Escalope de lomo, jamón crudo, salvia fresca, vino blanco, pimienta y hongos.</p>
+            </div>
+            <button onclick="addToBasket('Saltimbocca alla romana', 17100)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Bistecche panate di pollo</p>
+                <p class="item-price">$10500</p>
+                <p class="item-description">Milanesa de pollo con papas fritas.</p>
+            </div>
+            <button onclick="addToBasket('Bistecche panate di pollo', 10500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Bistecche panate alla parmigiana</p>
+                <p class="item-price">$13500</p>
+                <p class="item-description">Milanesa rellena a la parmigiana con jamón cocido, mozzarella y papas fritas.</p>
+            </div>
+            <button onclick="addToBasket('Bistecche panate alla parmigiana', 13500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Bistecche panate alla parmigiana di pollo</p>
+                <p class="item-price">$13500</p>
+                <p class="item-description">Milanesa rellena de pollo a la parmigiana con jamón cocido, mozzarella y papas fritas.</p>
+            </div>
+            <button onclick="addToBasket('Bistecche panate alla parmigiana di pollo', 13500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Bistecche panate di vitello</p>
+                <p class="item-price">$10500</p>
+                <p class="item-description">Milanesa de carne con papas fritas.</p>
+            </div>
+            <button onclick="addToBasket('Bistecche panate di vitello', 10500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Petto di pollo ripieni</p>
+                <p class="item-price">$13500</p>
+                <p class="item-description">Pechuga de pollo rellena con mozzarella y espinaca.</p>
+            </div>
+            <button onclick="addToBasket('Petto di pollo ripieni', 13500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Nero trota burro con patate</p>
+                <p class="item-price">$16500</p>
+                <p class="item-description">Trucha asada, manteca negra acompañada con papas fritas.</p>
+            </div>
+            <button onclick="addToBasket('Nero trota burro con patate', 16500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Trota grigliata al pesto</p>
+                <p class="item-price">$16500</p>
+                <p class="item-description">Trucha asada, pesto genovés, spaghettis.</p>
+            </div>
+            <button onclick="addToBasket('Trota grigliata al pesto', 16500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Trota alla salsa di champignon</p>
+                <p class="item-price">$16500</p>
+                <p class="item-description">Trucha asada, con salsa de champiñones.</p>
+            </div>
+            <button onclick="addToBasket('Trota alla salsa di champignon', 16500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Salmone rosa</p>
+                <p class="item-price">$22000</p>
+                <p class="item-description">Salmón Rosado acompañado con papas fritas.</p>
+            </div>
+            <button onclick="addToBasket('Salmone rosa', 22000)">Agregar</button>
+        </div>
+        
+    
+    </div>
+    <div id="basket-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

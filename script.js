@@ -35,6 +35,7 @@ function addToBasket(item, price) {
     }
 
     updateBasket();
+    
 }
 
 function updateBasket() {
