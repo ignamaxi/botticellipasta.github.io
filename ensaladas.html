@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-section">
+        <h2>Insalate / Ensaladas</h2>
+        <a href="index.html" class="back-button">Volver</a>
+    </header>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Insalata Meditteranea</p>
+                <p class="item-description">Rúcula, rodajas de tomate, mozzarella Burrata, pimienta, tomates secos, aceite de oliva.</p>
+                <span class="item-price">$12500</span>
+            </div>
+            <button onclick="addToBasket('Insalata Meditteranea', 12500)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Insalata Caprese</p>
+                <p class="item-description">Mozzarella Bocconcini de búfala, tomate en rodajas, aceitunas negras, albahaca, pimienta y aceite de oliva.</p>
+                <span class="item-price">$12500</span>
+            </div>
+            <button onclick="addToBasket('Insalata Caprese', 12500)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Insalata della famiglia</p>
+                <p class="item-description">Variedad de verdes, frutillas, champiñones, queso rallado, crutones y vinagreta.</p>
+                <span class="item-price">$12500</span>
+            </div>
+            <button onclick="addToBasket('Insalata della famiglia', 12500)">Agregar</button>
+        </div><div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Insalata Caesar</p>
+                <p class="item-description">Variedad de hojas verdes juliana, queso parmeggiano, alcaparras, aderezo caesar, crutones y pollo.</p>
+                <span class="item-price">$12500</span>
+            </div>
+            <button onclick="addToBasket('Insalata Caesar', 12500)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Insalata Botticella</p>
+                <p class="item-description">Variedad de hojas verdes, zanahoria, queso, tomate cherry, huevo duro y aceitunas.</p>
+                <span class="item-price">$12500</span>
+            </div>
+            <button onclick="addToBasket('Insalata Botticella', 12500)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Insalata di frutti de mare</p>
+                <p class="item-description">Variedad de frutos de mar frescos, vinagreta y perejil.</p>
+                <span class="item-price">$23500</span>
+            </div>
+            <button onclick="addToBasket('Insalata di frutti de mare', 23500)">Agregar</button>
+        </div>
+        <!-- Agregar el resto de los elementos del menú de la misma manera -->
+        <div id="basket-container"></div>
+
+        <script src="script.js"></script>
+</body>
+</html>

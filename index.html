@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="js/qrcode.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal - Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="js/qrcode.min.js"></script>
+<body>
+    <header>
+        <h1>Botticelli</h1>
+        <h2>PASTA FATTA IN CASA</h2>
+    </header>
+
+    <nav class="main-menu">
+        <ul>
+            <li><a href="entradas.html#menu-entradas">Tramessi / Entradas</a></li>
+            <li><a href="ensaladas.html#menu-ensaladas">Insalate / Ensaladas</a></li>
+            <li><a href="canasta.html#basket-section">Paste lunghe</a></li>
+            <li><a href="entradas.html#menu-entradas">Paste Ripiene</a></li>
+            <li><a href="ensaladas.html#menu-ensaladas">Sorrentini</a></li>
+            <li><a href="canasta.html#basket-section">Risotti</a></li>
+            <li><a href="entradas.html#menu-entradas">Carnes</a></li>
+            <li><a href="ensaladas.html#menu-ensaladas">Autore Menu</a></li>
+            <li><a href="canasta.html#basket-section">Menu Turistico</a></li>
+            <li><a href="entradas.html#menu-entradas">Dolci / Postres</a></li>
+            <li><a href="canasta.html#basket-section">Canasta</a></li>
+        </ul>
+    </nav>
+    <div id="qrcode"></div>
+    <script src="script.js"></script>
+    <script>
+        // URL del menú principal
+        const menuPrincipalURL = "https://www.tusitio.com/menu-principal";
+
+        // Crear el QR code
+        new QRCode(document.getElementById("qrcode"), {
+            text: menuPrincipalURL,
+            width: 128,
+            height: 128
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-section">
+        <h2>Tramessi / Entradas</h2>
+        <a href="index.html" class="back-button">Volver</a>
+    </header>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Antipásti assortiti</p>
+                <p class="item-description">Variedad de embutidos, escabeches caseros, quesos y tomates secos.</p>
+                <span class="item-price">$12900</span>
+            </div>
+            <button onclick="addToBasket('Antipásti assortiti', 12900)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Mozzarella caprese</p>
+                <p class="item-description">Rodajas de tomate frescos, mozzarella, aceitunas negras, albahaca, aceite de oliva y pimienta negra.</p>
+                <span class="item-price">$10900</span>
+            </div>
+            <button onclick="addToBasket('Mozzarella caprese', 10900)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Carpaccio veneziano</p>
+                <p class="item-description">Fetas de lomo vacuno, limón, pimienta negra y hongos o lomo de trucha.</p>
+                <span class="item-price">$10900</span>
+            </div>
+            <button onclick="addToBasket('Carpaccio veneziano', 10900)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Bastoncini di Mozzarella fritti</p>
+                <p class="item-description">Bastones de mozzarella fritos, albahaca, salsa de la familia y panceta ahumada.</p>
+                <span class="item-price">$10900</span>
+            </div>
+            <button onclick="addToBasket('Bastoncini di Mozzarella fritti', 10900)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Vitello tonnato</p>
+                <p class="item-description">Peceto, salsa de atún, anchoas, alcaparras, huevo duro.</p>
+                <span class="item-price">$10900</span>
+            </div>
+            <button onclick="addToBasket('Vitello tonnato', 10900)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Bruschette Napolitano</p>
+                <p class="item-description">Pan de masa madre con mozzarella, tomate fresco, albahaca y aceite de oliva.</p>
+                <span class="item-price">$10900</span>
+            </div>
+            <button onclick="addToBasket('Bruschette Napolitano', 10900)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Arancine di riso siciliane</p>
+                <p class="item-description">Croquetas de arroz rellenas de ragú de carne, arvejas, mozzarela, Dip Arrabbiata.</p>
+                <span class="item-price">$10900</span>
+            </div>
+            <button onclick="addToBasket('Arancine di riso siciliane', 10900)">Agregar</button>
+        </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Prosciutto con cuore di palma</p>
+                <p class="item-description">Jamón crudo con palmitos.</p>
+                <span class="item-price">$11900</span>
+            </div>
+            <button onclick="addToBasket('Prosciutto con cuore di palme', 11900)">Agregar</button><!-- Agregar el resto de los elementos del menú de la misma manera -->
+        </div>
+    </div>
+    <div id="basket-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
