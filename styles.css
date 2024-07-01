@@ -193,6 +193,31 @@ body {
     border-bottom: none;
 }
 
+.basket-item-name {
+    flex: 1;
+    text-align: left;
+}
+
+.basket-item-price {
+    margin-left: 10px;
+    text-align: right;
+}
+
+.remove-item-button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Tamaño estándar para los botones */
+    cursor: pointer;
+    border-radius: 5px;
+    flex-shrink: 0; /* Impide que el botón cambie de tamaño */
+    margin-left: 10px; /* Espacio a la izquierda del botón */
+}
+
+.remove-item-button:hover {
+    background-color: #ff4c4c;
+}
+
 #total {
     color: #971e26;
 }
