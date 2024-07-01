@@ -6,7 +6,7 @@
 .container {
     border: 2px solid #971e26; /* Marco negro de 10px */
     padding: 15px; /* Espacio interno para que el contenido no toque el marco */
-    margin: 0; /* Espacio exterior para centrar y separar el contenido del borde de la ventana */
+    margin: -10px; /* Espacio exterior para centrar y separar el contenido del borde de la ventana */
     max-width: 1200px; /* Ancho máximo del contenido */
     background-color: #ddd8a0; /* Fondo blanco dentro del marco */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del marco */
