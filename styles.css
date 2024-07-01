@@ -2,7 +2,16 @@
 
 /* MENU PRINCIPAL */ 
 /* Estilos del header */
-/* Estilos del header */
+/* Container for the framed look */
+.container {
+    border: 2px solid #971e26; /* Marco negro de 10px */
+    padding: 20px; /* Espacio interno para que el contenido no toque el marco */
+    margin: 20px auto; /* Espacio exterior para centrar y separar el contenido del borde de la ventana */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    background-color: #ddd8a0; /* Fondo blanco dentro del marco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del marco */
+}
+
 header {
     background: linear-gradient(to right, #009247bb, #fff, #ce2b36cf); /* Gradiente con colores de la bandera italiana */
     padding: 20px;
@@ -40,20 +49,24 @@ h2 {
     background-color: #f2eec3; /* Fondo gris claro */
     width: 200px; /* Ancho fijo */
     text-align: center; /* Centrar el texto */
+    overflow: hidden;
 }
 
 .main-menu ul li a {
+    display: block;
     font-size: 18px; /* Tamaño de fuente */
     color: #971e26; /* Color de texto */
     text-decoration: none;
     font-family: serif;
     font-style: oblique;
-    transition: background-color 0.3s ease; /* Transición */
+    transition: background-color 0.3s ease; color 0.3s ease /* Transición */
+    box-sizing: border-box;
 }
 
 .main-menu ul li a:hover {
     background-color: #ccac9a; /* Color de fondo en hover */
-    color: #fff; /* Color de texto en hover */
+    color: #fff;
+    border-radius: 10px; /* Color de texto en hover */
 }
 
 /* GENERAL STYLES */
