@@ -1,9 +1,10 @@
 /* styles.css */
 
 /* MENU PRINCIPAL */ 
-
+/* Estilos del header */
+/* Estilos del header */
 header {
-    background: linear-gradient(to right, #00924771, #ffffffdb, #ce2b3665);
+    background: linear-gradient(to right, #009246, #fff, #ce2b37); /* Gradiente con colores de la bandera italiana */
     padding: 20px;
     text-align: center;
     font-style: oblique;
@@ -17,31 +18,42 @@ h2 {
     font-weight: 100;
 }
 
+/* Estilos del menú principal */
+.main-menu {
+    text-align: center; /* Centrar el menú */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
 .main-menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex; /* Cambiar a display flex */
+    flex-direction: column; /* Mostrar los elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
 }
 
 .main-menu ul li {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 15px;
+    margin-bottom: 10px; /* Espacio entre elementos */
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #f2eec3; /* Fondo gris claro */
+    width: 200px; /* Ancho fijo */
+    text-align: center; /* Centrar el texto */
 }
 
 .main-menu ul li a {
-    font-size: 20px;
-    color: #971e26;
+    font-size: 18px; /* Tamaño de fuente */
+    color: #971e26; /* Color de texto */
     text-decoration: none;
-    padding: 10px 15px;
-    border: 1px solid #971e26;
-    border-radius: 10px;
     font-family: serif;
     font-style: oblique;
+    transition: background-color 0.3s ease; /* Transición */
 }
 
 .main-menu ul li a:hover {
-    background-color: #ccac9a;
+    background-color: #ccac9a; /* Color de fondo en hover */
+    color: #fff; /* Color de texto en hover */
 }
 
 /* GENERAL STYLES */
@@ -131,7 +143,6 @@ body {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 680px;
 }
 
 #clear-button:hover {

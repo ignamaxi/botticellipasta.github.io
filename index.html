@@ -7,7 +7,6 @@
     <title>Menú Principal - Restaurante</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<script src="js/qrcode.min.js"></script>
 <body>
     <header>
         <h1>Botticelli</h1>
@@ -29,11 +28,13 @@
             <li><a href="canasta.html#basket-section">Canasta</a></li>
         </ul>
     </nav>
+
     <div id="qrcode"></div>
+
     <script src="script.js"></script>
     <script>
         // URL del menú principal
-        const menuPrincipalURL = "https://www.tusitio.com/menu-principal";
+        const menuPrincipalURL = "https://ignamaxi.github.io/botticellipasta.github.io/index.html";
 
         // Crear el QR code
         new QRCode(document.getElementById("qrcode"), {
@@ -42,6 +43,5 @@
             height: 128
         });
     </script>
-
 </body>
 </html>
