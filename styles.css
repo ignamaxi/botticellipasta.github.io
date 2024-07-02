@@ -1,19 +1,25 @@
-/* styles.css */
-
-/* MENU PRINCIPAL */ 
-/* Estilos del header */
-/* Container for the framed look */
-.container {
-    border: 2px solid #971e26; /* Marco negro de 10px */
-    padding: 15px; /* Espacio interno para que el contenido no toque el marco */
-    margin: -10px; /* Espacio exterior para centrar y separar el contenido del borde de la ventana */
-    max-width: 1200px; /* Ancho máximo del contenido */
-    background-color: #ddd8a0; /* Fondo blanco dentro del marco */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del marco */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(232, 222, 195, 0.831);
+    color: #000;
+    margin: 0;
+    padding: 20px;
 }
 
+.container {
+    border: 2px solid #971e26;
+    padding: 15px;
+    margin: -15px;
+    max-width: 1200px;
+    background-color: #ddd8a0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+/* Header */
 header {
-    background: linear-gradient(to right, #009247bb, #fff, #ce2b36cf); /* Gradiente con colores de la bandera italiana */
+    background: linear-gradient(to right, #009247bb, #fff, #ce2b36cf);
     padding: 20px;
     text-align: center;
     font-style: oblique;
@@ -27,60 +33,49 @@ h2 {
     font-weight: 100;
 }
 
-/* Estilos del menú principal */
+/* Main Menu */
 .main-menu {
-    text-align: center; /* Centrar el menú */
-    margin-bottom: 20px; /* Espacio inferior */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .main-menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Cambiar a display flex */
-    flex-direction: column; /* Mostrar los elementos en columna */
-    align-items: center; /* Centrar horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-menu ul li {
-    margin-bottom: 10px; /* Espacio entre elementos */
+    margin-bottom: 10px;
     padding: 10px 15px;
     border-radius: 10px;
-    background-color: #f2eec3; /* Fondo gris claro */
-    width: 200px; /* Ancho fijo */
-    text-align: center; /* Centrar el texto */
+    background-color: #f2eec3;
+    width: 200px;
+    text-align: center;
     overflow: hidden;
 }
 
 .main-menu ul li a {
     display: block;
-    font-size: 18px; /* Tamaño de fuente */
-    color: #971e26; /* Color de texto */
+    font-size: 18px;
+    color: #971e26;
     text-decoration: none;
     font-family: serif;
     font-style: oblique;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición */
+    transition: background-color 0.3s ease, color 0.3s ease;
     box-sizing: border-box;
 }
 
 .main-menu ul li a:hover {
-    background-color: #ccac9a; /* Color de fondo en hover */
+    background-color: #ccac9a;
     color: #fff;
-    border-radius: 10px; /* Color de texto en hover */
+    border-radius: 10px;
 }
 
-/* GENERAL STYLES */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgba(232, 222, 195, 0.831);
-    color: #000;
-    margin: 0;
-    padding: 20px;
-}
-
-/* MENU SECTION */
-
+/* Menu Section */
 .menu-section {
     margin-bottom: 40px;
     background-color: #f2eec3c3;
@@ -142,7 +137,7 @@ body {
     background-color: #50a879;
 }
 
-/* BASKET SECTION */
+/* Basket Section */
 .basket-header {
     display: flex;
     justify-content: space-between;
@@ -207,11 +202,11 @@ body {
     background-color: #ff6b6b;
     color: white;
     border: none;
-    padding: 5px 10px; /* Tamaño estándar para los botones */
+    padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
-    flex-shrink: 0; /* Impide que el botón cambie de tamaño */
-    margin-left: 10px; /* Espacio a la izquierda del botón */
+    flex-shrink: 0;
+    margin-left: 10px;
 }
 
 .remove-item-button:hover {
@@ -222,8 +217,7 @@ body {
     color: #971e26;
 }
 
-/* BACK BUTTON */
-
+/* Back Button */
 .back-button {
     display: inline-block;
     margin-top: 5px;
@@ -238,8 +232,7 @@ body {
     background-color: #50a879;
 }
 
-/* ORDER BUTTON */
-
+/* Order Button */
 #order-button {
     background-color: #096a38;
     color: #fff;
@@ -260,7 +253,47 @@ body {
     cursor: not-allowed;
 }
 
+/* Ensure button response on mobile */
 button {
     touch-action: manipulation;
 }
+/* Dynamic Menu Styles */
+.dynamic-menu {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    text-align: center;
+    max-width: 1200vw;
+}
 
+.dynamic-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: -5px;
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas si es necesario */
+    justify-content: space-between;
+}
+
+.dynamic-menu ul li {
+    margin: 0 5px;
+    flex: 1 1 auto; /* Permitir que los elementos se ajusten automáticamente */
+}
+
+.dynamic-menu ul li a {
+    font-size: small;
+    display: block;
+    padding: 0;
+    margin-bottom: 5%;
+    background-color: #1c4b31c0;
+    color: #ffffffc4;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dynamic-menu ul li a:hover {
+    background-color: #b1cc9a;
+    color: #fff;
+}
