@@ -10,8 +10,9 @@
     <div class="container">
         <div class="menu-section">
             <h2>Pastas</h2>
-            <a href="index.html" class="back-button">Volver</a>
-        </header><div class="menu-section">
+            <a href="index.html" class="back-button">Menú Principal</a>
+        </header>
+        <div class="menu-sub-section">
             <h2>PASTE LUNGHE</h2>
             <div class="menu-item">
                 <div class="item-info">
@@ -71,23 +72,14 @@
                 <div class="item-info">
                     <p class="item-name">Malfatti di Spinaci</p>
                     <p class="item-price">$7900</p>
-                    <p class="item-description"></p>
+                    <p class="item-description">Ñoquis mal formados de espinaca.</p>
                 </div>
                 <button onclick="addToBasket('Malfatti di Spinaci', 7900)">Agregar</button>
             </div>
         </div>
 
-        <div class="menu-section">
+        <div class="menu-sub-section">
             <h2>PASTE RIPIENE</h2>
-            <div class="menu-item">
-                <div class="item-info">
-                    <p class="item-name">Ñoquis mal formados de espinaca.</p>
-                    <p class="item-price"></p>
-                    <p class="item-description"></p>
-                </div>
-                <button onclick="addToBasket('Ñoquis mal formados de espinaca.', 0)">Agregar</button>
-            </div>
-        
             <div class="menu-item">
                 <div class="item-info">
                     <p class="item-name">Ravioli di ricotta</p>
@@ -151,8 +143,8 @@
                 <button onclick="addToBasket('Cannelloni', 13500)">Agregar</button>
             </div>
         </div>
-        <div class="menu-section">
-                <h2>SORRENTINI</h2>
+        <div class="menu-sub-section">
+            <h2>SORRENTINI</h2>
             <div class="menu-item">
                 <div class="item-info">
                     <p class="item-name">Sorrentini caprese</p>
@@ -198,11 +190,9 @@
                 <button onclick="addToBasket('Sorrentini di zucca', 8900)">Agregar</button>
             </div>
         </div>
-    
-    
-    </div>
-    <div id="basket-container"></div>
-    <script src="script.js"></script>
+        </div>
+        <div id="basket-container"></div>
+        <script src="script.js"></script>
     </div>
 </body>
 </html>
