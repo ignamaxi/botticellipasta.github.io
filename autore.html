@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <div class="menu-section">
+        <h2>AUTORE MENU</h2>
+        <a href="index.html" class="back-button">Menú Principal</a>
+        </header>
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Il Botticello per 2</p>
+                <p class="item-price">$25900</p>
+                <p class="item-description">Degustación de pastas y salsas gratinadas a sugerencia del chef para dos personas</p>
+            </div>
+            <button onclick="addToBasket('Il Botticello per 2', 25900)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Il Botticello per 4</p>
+                <p class="item-price">$48000</p>
+                <p class="item-description">Degustación de pastas y salsas gratinadas a sugerencia del chef para cuatro personas</p>
+            </div>
+            <button onclick="addToBasket('Il Botticello per 4', 48000)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Prove di Mosè</p>
+                <p class="item-price">$15900</p>
+                <p class="item-description">Capelettis de trucha y salmón ahumado con crema de camarones.</p>
+            </div>
+            <button onclick="addToBasket('Prove di Mosè', 15900)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Tentazione di Cristo</p>
+                <p class="item-price">$13500</p>
+                <p class="item-description">Pañuelos rellenos de espinaca, ricotta y roquefort con crema de hongos y ajo.</p>
+            </div>
+            <button onclick="addToBasket('Tentazione di Cristo', 13500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Natività mistica</p>
+                <p class="item-price">$13500</p>
+                <p class="item-description">Panzottis de pollo, espinaca y zanahoria de masa verde con crema de hongos y ajo.</p>
+            </div>
+            <button onclick="addToBasket('Natività mistica', 13500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Allegoria della primavera</p>
+                <p class="item-price">$13500</p>
+                <p class="item-description">Sorrentinos de cordero con salsa pomodoro, hierbas aromáticas, aceitunas negras y ajos confitados.</p>
+            </div>
+            <button onclick="addToBasket('Allegoria della primavera', 13500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Adorazione Dei Magi</p>
+                <p class="item-price">$13500</p>
+                <p class="item-description">Sorrentinos rellenos con ojo de bife al vino tinto, matambrito de cerdo y pollo acompañados con salsa Della Famiglia.</p>
+            </div>
+            <button onclick="addToBasket('Adorazione Dei Magi', 13500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Madonna del Mare</p>
+                <p class="item-price">$15900</p>
+                <p class="item-description">Sorrentinos de pescado y mariscos, hierbas frescas con salsa crema y azafrán.</p>
+            </div>
+            <button onclick="addToBasket('Madonna del Mare', 15900)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">La Fortezza</p>
+                <p class="item-price">$15900</p>
+                <p class="item-description">Sorrentinos con masa de hongos, mozzarella y ciervo ahumado con salsa carbonara.</p>
+            </div>
+            <button onclick="addToBasket('La Fortezza', 15900)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">La Calunnia</p>
+                <p class="item-price">$13500</p>
+                <p class="item-description">Ñoquis rellenos con salsa de tomates frescos cubeteados, ajo, aceite de oliva, peperonccino, orégano y albahaca.</p>
+            </div>
+            <button onclick="addToBasket('La Calunnia', 13500)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Punizione dei ribelli</p>
+                <p class="item-price">$15900</p>
+                <p class="item-description">Pasta rellena de Centolla, Mascarpone, berenjenas, hierbas aromáticas acompañados con una crema de limón secos.</p>
+            </div>
+            <button onclick="addToBasket('Punizione dei ribelli', 15900)">Agregar</button>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <p class="item-name">Il Botticello speciale</p>
+                <p class="item-price">$40900</p>
+                <p class="item-description">Degustación de pastas y salsas especiales gratinadas para 2 personas</p>
+            </div>
+            <button onclick="addToBasket('Il Botticello speciale', 40900)">Agregar</button>
+        </div>
+        
+        
+    
+    </div>
+    <div id="basket-container"></div>
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>

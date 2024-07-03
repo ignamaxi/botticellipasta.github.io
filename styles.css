@@ -31,7 +31,7 @@ header {
 
 h2 {
     font-size: medium;
-    font-weight: 100;
+    font-weight: bold;
 }
 
 /* Main Menu */
@@ -51,7 +51,7 @@ h2 {
 
 .main-menu ul li {
     margin-bottom: 10px;
-    padding: 10px 15px;
+    padding: 0;
     border-radius: 10px;
     background-color: #f2eec3;
     width: 200px;
@@ -69,6 +69,8 @@ h2 {
     font-style: oblique;
     transition: background-color 0.3s ease, color 0.3s ease;
     box-sizing: border-box;
+    padding: 10px 15px;
+    width: 100%;
 }
 
 .main-menu ul li a:hover {
@@ -151,9 +153,11 @@ h2 {
     background-color: #ff6b6b;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 5px 15px;
     cursor: pointer;
     border-radius: 5px;
+    float: right;
+    font-size: medium;
 }
 
 #clear-button:hover {
@@ -224,8 +228,8 @@ h2 {
 /* Back Button */
 .back-button {
     display: inline-block;
-    margin-top: 5px;
-    padding: 5px 20px;
+    font-size: medium;
+    padding: 5px 15px;
     background-color: #096a38c3;
     color: #fff;
     text-decoration: none;
