@@ -157,7 +157,7 @@ h2 {
     cursor: pointer;
     border-radius: 5px;
     float: right;
-    font-size: medium;
+    font-size:small;
 }
 
 #clear-button:hover {
@@ -228,7 +228,7 @@ h2 {
 /* Back Button */
 .back-button {
     display: inline-block;
-    font-size: medium;
+    font-size: small;
     padding: 5px 15px;
     background-color: #096a38c3;
     color: #fff;
