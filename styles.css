@@ -10,11 +10,10 @@ body {
 .container {
     border: 2px solid #971e26;
     padding: 15px;
-    margin: -15px;
+    margin: auto;
     max-width: 1200px;
     background-color: #ddd8a0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
 }
 
 /* Header */
@@ -292,7 +291,7 @@ button {
 .dynamic-menu ul li a {
     font-size:90% ;
     display: block;
-    padding: 4px;
+    padding: 3px;
     margin-bottom: 5%;
     background-color: #1c4b31c0;
     color: #ffffffc4;
