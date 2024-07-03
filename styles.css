@@ -278,7 +278,7 @@ button {
 .dynamic-menu ul {
     list-style-type: none;
     padding: 0;
-    margin: -5px;
+    margin: -15px;
     display: flex;
     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas si es necesario */
     justify-content: space-between;
@@ -290,9 +290,9 @@ button {
 }
 
 .dynamic-menu ul li a {
-    font-size: small;
+    font-size:90% ;
     display: block;
-    padding: 0;
+    padding: 4px;
     margin-bottom: 5%;
     background-color: #1c4b31c0;
     color: #ffffffc4;
